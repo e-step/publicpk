@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Games</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        #myInput {
+          background-color: rgb(14, 14, 87);
+          background-position: 10px 12px;
+          background-repeat: no-repeat;
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+        }
+        
+        .myUL {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-image: url("https://e0.pxfuel.com/wallpapers/332/689/desktop-wallpaper-black-and-white-abstract-purple-for-your-mobile-tablet-explore-dark-purple-purple-background-purple-and-black-dark-purple-background-purple-and-white-gaming-thumbnail.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: white;
+        }
+        
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+          display: block
+        }
+        
+        #myUL li a:hover:not(.header) {
+          background-color: #eee;
+        }
+        body {
+            background-image: url("https://e0.pxfuel.com/wallpapers/332/689/desktop-wallpaper-black-and-white-abstract-purple-for-your-mobile-tablet-explore-dark-purple-purple-background-purple-and-black-dark-purple-background-purple-and-white-gaming-thumbnail.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+</head>
+<body style="font-family: arial; color: white;">
+<h1>Online Games</h1>
+
+<input style="background-image: url('https://e0.pxfuel.com/wallpapers/332/689/desktop-wallpaper-black-and-white-abstract-purple-for-your-mobile-tablet-explore-dark-purple-purple-background-purple-and-black-dark-purple-background-purple-and-white-gaming-thumbnail.jpg');
+background-repeat: no-repeat; background-size: cover;" type="text" class="myUL" id="myInput" onkeyup="myfunction()" placeholder="Search game" title="Type in game">
+
+<ul id="myUL" class="myUL">
+    <li><a style="color: white;" class="myUL" href="http://pacman.live/play.html">Pack man</a></li>
+    <li><a style="color: white;" class="myUL" href="http://minecraft.sub.ir/">Minecraft</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/">Crazy games</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/game/table-tennis-world-tour">Ping Pong</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/t/car">Car games</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/c/action">Actions</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/t/soccer">Football</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/t/first-person-shooter">Multiplayer shooter</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.topspeed.com/games/">Car games 2</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/t/multiplayer">Multiplayer Games</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/game/tic-tac-toe">Tic tac toe</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.1001games.com/">1001 games</a></li>
+    <li><a style="color: white;" class="myUL" href="https://uno-online.co/">Uno</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/game/pou">pou</a></li>
+    <li><a style="color: white;" class="myUL" href="https://dinorunner.com/">Dinosour game</a></li>
+    <li><a style="color: white;" class="myUL" href="https://minecraft.net">Minecraft net</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/game/crazy-for-speed">Crazy-for-speed</a></li>
+    <li><a style="color: white;" class="myUL" href="https://www.crazygames.com/game/sky-riders-buk">Sky-riders-buk</a></li>
+  </ul>
+
+
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+        
+        </body>
+        </html>
